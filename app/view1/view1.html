@@ -1,0 +1,49 @@
+
+    <div data-ng-controller="guestyCtrl">
+
+        <div class="main-container">
+
+            <div class="title-el"><i class="fa fa-home"></i>Choose a city </div>
+
+            <div dropdown="cities" ng-model="city"></div>
+
+            <div class="data-container" data-ng-repeat="voucherData in vouchersData">
+
+                <div class="voucher-row" data-ng-click="openDetailsView(voucherData.listing.id, voucherData.listing.name, voucherData.listing.public_address, city)">
+                    
+                    <img class="listing-image" src="{{voucherData.listing.picture_url}}" alt="{{voucherData.listing.name}}">
+
+                    <div class="listing-name">
+
+                        <div><i class="fa fa-quote-left"></i>{{voucherData.listing.name}}<i class="fa fa-quote-right"></i></div>
+                        <div> <i class="fa fa-map-o"> </i>{{voucherData.listing.public_address}}</div>
+
+
+                        <div class="more-data-container">
+                            <div class="more-data">
+                                <div data-ng-show="voucherData.listing.neighborhood"><i class="fa fa-users"></i>{{voucherData.listing.neighborhood}}</div>
+                                <div data-ng-show="voucherData.listing.public_address"><i class="fa fa-id-card-o"></i>{{voucherData.listing.public_address}}</div>
+                            </div>
+                            <div class="more-data counts">
+                                <div data-ng-show="voucherData.listing.reviews_count"><i class="fa fa-book"></i>{{voucherData.listing.reviews_count}}</div>
+                                <div data-ng-show="voucherData.listing.star_rating"><i class="fa fa-star"></i>{{voucherData.listing.star_rating}}</div>
+                                <div data-ng-show="voucherData.listing.beds"><i class="fa fa-bed"></i>{{voucherData.listing.beds}}</div>
+
+                                <div data-ng-show="voucherData.listing.bathrooms"><i class="fa fa-bath"></i>{{voucherData.listing.bathrooms}}</div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>

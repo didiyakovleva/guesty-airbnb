@@ -1,0 +1,33 @@
+<div class="reviews" data-ng-controller="detailsCtrl">
+
+    <div class="title-el back" data-ng-click="backToHome()"><i class="fa fa-home"></i>Back</div>
+
+    <div class="reviews-title"> <span style="font-size: 0.8em; padding-right: 10px">Reviews of:</span> {{routeParams.name}},
+
+        <span class="listing-address">{{routeParams.address}}</span>
+
+    </div>
+
+
+
+
+
+
+    <div class="comment" data-ng-repeat="comment in reviewsData">
+
+        <img class="listing-image" src="{{comment.author.picture_url}}">
+
+
+        <div>
+            <div>{{comment.comments}}</div>
+
+            <div class="author"><i class=" fa fa-user-circle-o"></i>{{comment.author.first_name}}</div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>

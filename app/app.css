@@ -1,0 +1,220 @@
+body {
+    background-color: white;
+}
+
+button,
+submit {
+    border: none;
+}
+
+
+/*Main conteiner*/
+
+.main-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.title-el {
+    margin: 30px;
+    border: 1px solid #eee;
+    font-size: 1.2em;
+    padding: 7px 0px;
+    cursor: pointer;
+}
+.reviews {
+    margin: 30px;
+}
+.reviews-title{
+    font-size: 1.4em;
+   line-height: 39px;
+    margin: 30px;
+   
+}
+
+.reviews .listing-image {
+        margin: 0px 30px 30px 30px;
+}
+.listing-address {
+    font-size: 0.6em;
+    
+}
+.author{
+    margin-top: 20px;
+}   
+.author i { padding: 0px; padding-right: 10px;}
+.comment{
+    margin-right: 20%;
+    display: flex;
+    
+}
+
+.back {
+    width: 105px;
+}
+i {
+    font-size: 1.4em;
+    padding:0px 15px;
+    color: #0073AD;
+}
+
+.voucher-row {
+    margin: 0px 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    border-bottom: 1px solid #0073AD;
+}
+.voucher-row:hover{
+    background:#eee;
+    cursor: pointer;
+    
+    
+}
+    
+
+.voucher-row:hover .listing-name .more-data-container{
+    display: block;
+   
+}
+.listing-image {
+    width: 20%;
+    padding: 7px;
+    border: solid 1px #EFEFEF;
+    margin: 40px;
+}
+.listing-name {
+    font-size: 1.4em;
+    padding: 0px 30px;
+    margin-top: 38px;
+}
+
+.more-data{
+    font-size: 0.8em;
+    display: flex;
+    
+}
+.counts {
+    margin-top: 30px;
+}
+.more-data-container{
+    display: none;
+    margin-top: 40px;
+}
+
+.fa-star{
+    color:#FFBE00;
+}
+.fa-bed{
+    color:#A562CD;
+}
+.fa-users{
+    color:#72D28F;
+}
+.fa-book .fa-user-circle-o{
+    color: #FF5F5F;
+}
+.fa-bath{
+    color: #4EBEF3;
+}
+/*Drop Down style*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-model: border-box;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    z-index: 2000;
+    margin-bottom: 25px;
+    outline: 1px solid #eee ;
+   
+}
+
+.dropdown.open {
+    z-index: 3000;
+    background: white;
+}
+
+.dropdown div,
+.dropdown .title {
+    position: absolute;
+    left: 0px;
+    -webkit-transition: all 0.1s ease-in-out;
+    width: 500px;
+    height: 40;
+    line-height: 40px;
+    background: white;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-user-select: none;
+    font-size: 1.4em;
+}
+
+.dropdown div:hover {
+    background: #eee;
+    color: #FF7B1C;
+}
+
+.dropdown .title:hover {
+    color: #FF7B1C;
+}
+
+.dropdown div span,
+.dropdown .title span {
+    margin: 0px 0px 0px 10px;
+}
+
+.dropdown .title:after {
+    content: '\25BC';
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    opacity: 0.1;
+    font-size: 0.7em;
+}
+
+.dropdown .title {
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 0%;
+}
+
+.dropdown .title:active {
+    transform: rotateX(60deg);
+}
+
+.dropdown div.selected {
+    color: #72D28F;
+}
+
+.dropdown div.ng-hide {
+    display: block!important;
+    top: 0px !important;
+}
+
+.dropdown .clickscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+   
+    opacity: 0.2;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.dropdown .clickscreen.ng-hide {
+    display: none!important;
+    opacity: 0;
+    cursor: auto!important;
+}
