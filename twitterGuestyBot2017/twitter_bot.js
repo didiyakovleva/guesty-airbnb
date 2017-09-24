@@ -6,10 +6,10 @@ var json2csv = require('json2csv');
 var fs = require('fs');
 
 var secret = {
-    consumer_key: '4YKuG8bT9QWTJppawbdO6rPgF',
-    consumer_secret: 'H2qqp03wC0PkLvXtKybpDoZo2y2GI1QiqAeGM7dwamfjZOe3yp',
-    access_token_key: '911875705406984192-Ifww7vIRVROwXSFxlkday7lCF68beu6',
-    access_token_secret: 'VgyoypyaG39p0jDe4JEFHW3H3qtSNm9RtPTBGYbCl7dkc'
+    consumer_key: 'consumer_key',
+    consumer_secret: 'consumer_secret',
+    access_token_key: 'access_token_key',
+    access_token_secret: 'access_token_secret'
 }
 
 var Twitter = new TwitterPackage(secret);
